@@ -1,7 +1,7 @@
 # Philip Allen
 
-I design and run AI-assisted engineering programs — the workflows, the guardrails, and the
-delivery tracking that keep them honest.
+I design and run AI-assisted engineering projects — and the program-level workflows,
+guardrails, and delivery tracking that keep them honest.
 
 **Saratoga Springs, NY** · Open to **AI Operations**, **AI Workflow Designer**, and
 **AI Technical Program Manager** roles.
@@ -12,18 +12,18 @@ delivery tracking that keep them honest.
 
 ## What I actually do
 
-I build research programs where AI agents produce most of the code, and I treat the
+I build research projects where AI agents produce most of the code, and I treat the
 hard part as making that output *trustworthy* rather than merely fast. That means gates
 that tell a real result apart from a broken instrument, metrics that housekeeping cannot
 move, and a decision log that survives review.
 
 Five public repositories, all built in 2026 under my direction with agentic AI tooling.
-Each one solves a different part of the same problem: **how do you run a program that an
-agent mostly executes, and still be able to stand behind its results?**
+Each one solves a different part of the same problem: **how do you run work that an agent
+mostly executes, and still be able to stand behind its results?**
 
 ---
 
-## The programs
+## The projects
 
 ### Maith — [philipdallen/Maith](https://github.com/philipdallen/Maith)
 
@@ -41,10 +41,11 @@ is part of the repository's history, on purpose.
 A Lean 4 / Mathlib formalization of the P vs NP barrier landscape, and the integrity gates
 that keep AI-assisted proof search honest.
 
-The relativization barrier is formalized in Lean 4. Natural proofs and algebrization are
-scoped as frozen statement specifications rather than claimed as complete. The gates exist
-because a proof assistant will happily accept a proof of the wrong statement, and an agent
-will happily produce one.
+The oracle substrate (`P^A ⊆ NP^A`, both directions) and the BGS diagonalization module are
+machine-checked with zero `sorry`. Relativization is rendered as a frozen statement with two
+tracked `sorry`s, and natural proofs exists as statement specifications — scoped, not claimed
+as complete. The gates exist because a proof assistant will happily accept a proof of the
+wrong statement, and an agent will happily produce one.
 
 ### ephapse — [philipdallen/ephapse](https://github.com/philipdallen/ephapse)
 
@@ -76,11 +77,11 @@ A read-only static dashboard that aggregates cross-repo delivery status from the
 research repositories above, with a documented readiness framework and scheduled per-repo
 automation.
 
-This is the operations artifact: it reads each program's status log, renders readiness and
+This is the operations artifact: it reads each project's status log, renders readiness and
 flow, and is checked daily by a monitoring job that files an issue when the public artifact
 breaks. Field definitions live in a versioned contract, because I learned the hard way that
 a metric without a stated definition will eventually be moved by something that has nothing
-to do with the program it claims to measure.
+to do with the project it claims to measure.
 
 ---
 
